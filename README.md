@@ -87,6 +87,7 @@ The raw CSV files from the Kaggle dataset required some initial cleaning and pre
 
 
 <img width="825" height="750" alt="image" src="https://github.com/user-attachments/assets/c8dd8fd6-91d2-4500-ac07-cb98c58cc20e" />
+
 <img width="826" height="753" alt="image" src="https://github.com/user-attachments/assets/2415d635-8f7e-451b-9809-b7b79d18999f" />
 
 
@@ -121,10 +122,12 @@ I then run the equivalent code for each table, confirming the number of rows con
 Here the scope is to check the formats of key fields such as dates or costs. If in a wrong format change that.  
 
 Example:
+
 <img width="1381" height="133" alt="image" src="https://github.com/user-attachments/assets/f9358cc4-165b-4eb8-baa0-cd76b8bb93b4" />
 
 
 Here we change the date using the CAST function, we are not going to do an analysis that requires the precise moment.
+
 
 <pre> 
  
@@ -157,13 +160,20 @@ Result: <img width="876" height="282" alt="image" src="https://github.com/user-a
 ## 📈 Project Includes
 
 - **Overview:** A high-level summary of key performance indicators (KPIs), such as total revenue, average delivery time, top product categories.
-total revenue: <img width="414" height="219" alt="image" src="https://github.com/user-attachments/assets/aff6501c-522b-429c-8f2c-c6ecab959de2" />
+total revenue:
+<img width="414" height="219" alt="image" src="https://github.com/user-attachments/assets/aff6501c-522b-429c-8f2c-c6ecab959de2" />
 
-running total revenue per year :<img width="887" height="375" alt="image" src="https://github.com/user-attachments/assets/1bef258e-597a-4f13-9b2c-daf6de62124d" />
 
-Average delivery time: <img width="388" height="515" alt="image" src="https://github.com/user-attachments/assets/07094633-1a92-40ca-ae27-6051e0ca2fcf" />
+running total revenue per year :
+<img width="887" height="375" alt="image" src="https://github.com/user-attachments/assets/1bef258e-597a-4f13-9b2c-daf6de62124d" />
 
-Top product categories (10 best performing by tot sales): ![Uploading image.png…]()
+
+Average delivery time:
+<img width="388" height="515" alt="image" src="https://github.com/user-attachments/assets/07094633-1a92-40ca-ae27-6051e0ca2fcf" />
+
+
+Top product categories (10 best performing by tot sales): 
+![Uploading image.png…]()
 
 
 

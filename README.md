@@ -59,6 +59,20 @@ This structure supports complex queries and enables robust data slicing for KPIs
 
 ---
 
+
+
+
+ ## Schema structure
+
+
+
+
+<img width="2486" height="1496" alt="schema" src="https://github.com/user-attachments/assets/4c025686-043d-4f7f-b99d-4f5a9a02d3b8" />
+
+
+
+---
+
 ## 🧹 Data Processing
 
 The raw CSV files from the Kaggle dataset required some initial cleaning and preparation. SQL scripts were written to:

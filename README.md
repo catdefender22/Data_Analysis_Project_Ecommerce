@@ -146,35 +146,30 @@ ALTER COLUMN order_estimated_delivery_date DATE;
  
  </pre>
   
-Result: ![Uploading image.png…]()
+Result: <img width="876" height="282" alt="image" src="https://github.com/user-attachments/assets/b50ac75c-bac1-4b3e-ae07-bde51b472fd8" />
 
   
-- Join tables to build a unified view of customer journeys
-
-
-
-
-  
-
-
 
 ---
 
+
+
 ## 📈 Project Includes
 
-- **Overview:** A high-level summary of key performance indicators (KPIs), such as total revenue, average delivery time, top product categories, and review score distribution.
+- **Overview:** A high-level summary of key performance indicators (KPIs), such as total revenue, average delivery time, top product categories.
+total revenue: <img width="414" height="219" alt="image" src="https://github.com/user-attachments/assets/aff6501c-522b-429c-8f2c-c6ecab959de2" />
 
-- **Sales by Product Category:** SQL queries and visual summaries identifying top-performing product categories based on total revenue and number of orders.
+running total revenue per year :<img width="887" height="375" alt="image" src="https://github.com/user-attachments/assets/1bef258e-597a-4f13-9b2c-daf6de62124d" />
 
-- **Customer Analysis:** Exploration of customer behavior by region (state and city), including purchase frequency, order value, and retention trends.
+Average delivery time: <img width="388" height="515" alt="image" src="https://github.com/user-attachments/assets/07094633-1a92-40ca-ae27-6051e0ca2fcf" />
 
-- **Geographical Analysis:** Insights into how sales and delivery performance vary across Brazil using customer and seller location data.
+Top product categories (10 best performing by tot sales): ![Uploading image.png…]()
 
-- **Time-Based Analysis:** Monthly trends in order volume, revenue, and review scores to identify seasonal patterns and market shifts over time.
 
-- **Review & Satisfaction Metrics:** Analysis of customer reviews to understand sentiment, delivery experience, and seller performance.
 
-- **Planned Dashboard:** A Tableau dashboard (coming soon) will allow interactive filtering by category, region, delivery status, review score, and more.
+While the foundational analysis and data preparation were done in SQL, the remaining exploration particularly around customer behavior, delivery patterns, and geographical trends will be completed in Tableau. This decision was made to leverage Tableau's interactive and visual capabilities, making the insights easier to interpret and communicate to both technical and non-technical stakeholders. The dashboard will consolidate key KPIs and allow users to explore the data through filters, maps, and dynamic charts.
+
+
 
 ---
 

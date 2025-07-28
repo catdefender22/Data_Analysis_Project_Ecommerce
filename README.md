@@ -22,7 +22,7 @@ Everything is documented as a step-by-step journal. I walk through what question
 ## 🛠️ Tools Used
 
 - **SQL:** For data cleaning, transformation, and analytical querying  
-- **PostgreSQL:** Used as the database engine to store and manage the relational dataset   
+- **SMSS:** Used as the database engine to store and manage the relational dataset   
 - **Tableau:** For visualization of results and reporting
 
 ---
@@ -77,13 +77,86 @@ This structure supports complex queries and enables robust data slicing for KPIs
 
 The raw CSV files from the Kaggle dataset required some initial cleaning and preparation. SQL scripts were written to:
 
-- Import and load the data into PostgreSQL  
-- Handle missing or null values  
-- Normalize formats (e.g., dates, IDs)  
-- Create indexes to improve query performance  
-- Join tables to build a unified view of customer journeys  
 
-All processing steps are documented and versioned, ensuring full transparency. This cleaned and structured data now serves as the foundation for querying, analysis, and future dashboard development in Tableau.
+
+
+- Import and load the data into SQL Server Management Studio
+
+  The raw dataset files (CSV format) were uploaded directly into SQL Server Management Studio (SSMS) using the "Import Flat File..." wizard. This allowed me to create all tables easily with their respective columns and data types, without (mostly) changing the type.
+
+
+
+<img width="825" height="750" alt="image" src="https://github.com/user-attachments/assets/c8dd8fd6-91d2-4500-ac07-cb98c58cc20e" />
+<img width="826" height="753" alt="image" src="https://github.com/user-attachments/assets/2415d635-8f7e-451b-9809-b7b79d18999f" />
+
+
+
+  
+- Handle missing or null values
+
+I’m checking for blank and NULL values across all key tables in the Olist dataset. This helps identify any data quality issues that could affect the accuracy of the analysis. For each table, I count how many rows are missing critical fields like IDs, timestamps, payment values, or location data.
+
+Example:
+
+<pre> 
+ 
+ SELECT 
+    COUNT(*) AS total_rows,
+    SUM(CASE WHEN order_id IS NULL THEN 1 ELSE 0 END) AS missing_order_id,
+    SUM(CASE WHEN order_item_id IS NULL THEN 1 ELSE 0 END) AS missing_order_item_id,
+    SUM(CASE WHEN product_id IS NULL THEN 1 ELSE 0 END) AS missing_product_id,
+    SUM(CASE WHEN seller_id IS NULL THEN 1 ELSE 0 END) AS missing_seller_id,
+    SUM(CASE WHEN shipping_limit_date IS NULL THEN 1 ELSE 0 END) AS missing_shipping_limit_date,
+    SUM(CASE WHEN price IS NULL THEN 1 ELSE 0 END) AS missing_price,
+    SUM(CASE WHEN freight_value IS NULL THEN 1 ELSE 0 END) AS missing_freight_value
+FROM olist_order_items_dataset;
+ 
+  </pre>
+
+I then run the equivalent code for each table, confirming the number of rows containing NULL values and excluding them.
+
+  
+- Normalize formats (e.g., dates)
+
+Here the scope is to check the formats of key fields such as dates or costs. If in a wrong format change that.  
+
+Example:
+<img width="1381" height="133" alt="image" src="https://github.com/user-attachments/assets/f9358cc4-165b-4eb8-baa0-cd76b8bb93b4" />
+
+
+Here we change the date using the CAST function, we are not going to do an analysis that requires the precise moment.
+
+<pre> 
+ 
+ ALTER TABLE olist_orders_dataset
+ALTER COLUMN order_purchase_timestamp DATE;
+
+ALTER TABLE olist_orders_dataset
+ALTER COLUMN order_approved_at DATE;
+
+ALTER TABLE olist_orders_dataset
+ALTER COLUMN order_delivered_carrier_date DATE;
+
+ALTER TABLE olist_orders_dataset
+ALTER COLUMN order_delivered_customer_date DATE;
+
+ALTER TABLE olist_orders_dataset
+ALTER COLUMN order_estimated_delivery_date DATE;
+
+ 
+ </pre>
+  
+Result: ![Uploading image.png…]()
+
+  
+- Join tables to build a unified view of customer journeys
+
+
+
+
+  
+
+
 
 ---
 

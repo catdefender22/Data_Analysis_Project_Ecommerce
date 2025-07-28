@@ -160,23 +160,31 @@ Result: <img width="876" height="282" alt="image" src="https://github.com/user-a
 ## 📈 Project Includes
 
 - **Overview:** A high-level summary of key performance indicators (KPIs), such as total revenue, average delivery time, top product categories.
-total revenue:
+ <br>
+
+Total revenue:<br>
 <img width="414" height="219" alt="image" src="https://github.com/user-attachments/assets/aff6501c-522b-429c-8f2c-c6ecab959de2" />
+<br>
 
-
-running total revenue per year :
+Running total revenue per year :<br>
 <img width="887" height="375" alt="image" src="https://github.com/user-attachments/assets/1bef258e-597a-4f13-9b2c-daf6de62124d" />
+<br>
 
-
-Average delivery time:
+Average delivery time:<br>
 <img width="388" height="515" alt="image" src="https://github.com/user-attachments/assets/07094633-1a92-40ca-ae27-6051e0ca2fcf" />
 
+<br>
+Top product categories (10 best performing by tot sales): <br>
+<img width="409" height="469" alt="image" src="https://github.com/user-attachments/assets/a191e435-439d-43e4-a65a-222b7047e5f3" />
 
-Top product categories (10 best performing by tot sales): 
-![Uploading image.png…]()
 
+<br><br>
+---
+<br><br>
 
+## 👁️‍🗨️ Visualization
 
+<br>
 While the foundational analysis and data preparation were done in SQL, the remaining exploration particularly around customer behavior, delivery patterns, and geographical trends will be completed in Tableau. This decision was made to leverage Tableau's interactive and visual capabilities, making the insights easier to interpret and communicate to both technical and non-technical stakeholders. The dashboard will consolidate key KPIs and allow users to explore the data through filters, maps, and dynamic charts.
 
 

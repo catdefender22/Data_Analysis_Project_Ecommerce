@@ -1,4 +1,4 @@
-# SQL-Project-1---eCommerce
+# Data Analysis Project 1 - Olist Ecommerce
 
 ## 📚 Table of Contents
 - [Overview](#overview)

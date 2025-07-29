@@ -197,7 +197,7 @@ Here the result:<br> <br>
 <img width="1149" height="774" alt="olist cx analysis" src="https://github.com/user-attachments/assets/db901459-dcd5-4148-94ac-55eff2dd18da" />
 <br><br>
 
-<p>👉 Click <a href="https://public.tableau.com/views/brasilianecommerceanalysis/olistcxanalysis?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener noreferrer">here</a> for the interactive version of the dashboard.</p>
+<p> Click <a href="https://public.tableau.com/views/brasilianecommerceanalysis/olistcxanalysis?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener noreferrer">here</a> for the interactive version of the dashboard.</p>
 
 ---
 

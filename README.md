@@ -52,7 +52,7 @@ This rich structure allows for in-depth analysis of customer behavior, product p
 
 ## 🗄️ Database
 
-To manage and explore the dataset effectively, a **relational SQL database** has been created. PostgreSQL is used to store and query the data. The schema has been designed to reflect the natural relationships between orders, customers, sellers, and products.
+To manage and explore the dataset effectively, a **relational SQL database** has been created. T-SQL is used to store and query the data. The schema has been designed to reflect the natural relationships between orders, customers, sellers, and products.
 
 Key relationships include:
 
